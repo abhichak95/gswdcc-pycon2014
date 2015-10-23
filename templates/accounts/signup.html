@@ -1,0 +1,15 @@
+{% extends '_layouts/base.html' %}
+{% load crispy_forms_tags %}
+
+{% block title %}Register | {{block.super}} {% endblock title %}
+
+{% block headline %}<h1>Register for PyCon Survival Guide</h1>{% endblock headline %}
+
+{% block content %}
+{% crispy form %}
+<!-- <form action='' method='POST'>
+	{% csrf_token %}
+	{{ form.as_p }}
+	<input type='submit' value='Sign Up'>
+</form> -->
+{% endblock content %}
